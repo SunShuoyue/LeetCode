@@ -5,7 +5,7 @@
 #         self.next = None
 
 class Solution:
-    def deleteDuplicates(self, head: ListNode) -> ListNode:
+    def deleteDuplicates(self, head):
         if not head:
             return head
         if not head.next:
