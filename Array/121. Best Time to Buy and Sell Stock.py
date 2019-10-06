@@ -14,5 +14,3 @@ class Solution(object):
                 if d > a:
                     a = d
         return a
-
-# actually this solution is a bit tricky. I wrote a double for loop which chould't pass the last test, so I came out with this idea.
