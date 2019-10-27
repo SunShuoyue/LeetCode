@@ -17,4 +17,3 @@ class Solution:
             head = head.next
             head = self.deleteDuplicates(head)
             return head
-

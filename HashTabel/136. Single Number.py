@@ -4,7 +4,7 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        for i in range(len(nums)//2):
+        for i in range(len(nums) // 2):
             a = nums.pop()
             if a in nums:
                 nums.remove(a)
@@ -21,5 +21,5 @@ class Solution(object):
         """
         res = 0
         for i in nums:
-            res^=i
+            res ^= i
         return res

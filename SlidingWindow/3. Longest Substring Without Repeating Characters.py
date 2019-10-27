@@ -7,10 +7,10 @@ class Solution(object):
         if len(s) < 2:
             return len(s)
         i = 0
-        for j in range(1,len(s)):
-            if s[j] in s[i:j] or len(set(s[i:j]))!=(j-i):
+        for j in range(1, len(s)):
+            if s[j] in s[i:j] or len(set(s[i:j])) != (j - i):
                 i += 1
-        return j-i+1
+        return j - i + 1
 
 
 class Solution:
@@ -30,13 +30,13 @@ class Solution:
                     i += 1
                     if i == len(s):
                         if j == 0:
-                            l.append(len(s)-1)
+                            l.append(len(s) - 1)
                             return max(l)
                         else:
-                            l.append(len(s[j:i-1]))
+                            l.append(len(s[j:i - 1]))
                             return max(l)
-                l.append(len(s[j:i-1]))
-                j = s[:i].index(str(s[i]),j+1,i)
+                l.append(len(s[j:i - 1]))
+                j = s[:i].index(str(s[i]), j + 1, i)
                 i = i + 1
             return max(l)
         elif len(s) == 1:

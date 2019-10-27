@@ -19,7 +19,6 @@ class Solution(object):
                 node = node.next
 
 
-
 # Definition for singly-linked list.
 # class ListNode(object):
 #     def __init__(self, x):
@@ -34,4 +33,3 @@ class Solution(object):
         """
         node.val = node.next.val
         node.next = node.next.next
-

@@ -5,7 +5,7 @@ class Solution(object):
         :type nums2: List[int]
         :rtype: List[int]
         """
-        nums = [-1]*len(nums1)
+        nums = [-1] * len(nums1)
         s = []
         for num in nums2:
             while s:

@@ -14,8 +14,8 @@ class Solution(object):
             return trust[0][1]
         unzip = list(zip(*trust))
         res = set(unzip[1]) - set(unzip[0])
-        if len(res)==1:
-            city = set(range(1,N+1)) - set([i[0] for i in trust if i[1] == sum(res)])
+        if len(res) == 1:
+            city = set(range(1, N + 1)) - set([i[0] for i in trust if i[1] == sum(res)])
             if res == city:
                 return list(res)[0]
             else:

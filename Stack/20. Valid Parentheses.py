@@ -4,11 +4,11 @@ class Solution(object):
         :type s: str
         :rtype: bool
         """
-        check=[]
-        pairs = {')':'(','}':'{',']':'['}
+        check = []
+        pairs = {')': '(', '}': '{', ']': '['}
         for i in s:
             if i in pairs:
-                if len(check)<1:
+                if len(check) < 1:
                     return False
                 if check.pop() != pairs[i]:
                     return False
@@ -18,4 +18,3 @@ class Solution(object):
             return True
         else:
             return False
-

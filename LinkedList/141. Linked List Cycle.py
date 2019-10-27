@@ -10,7 +10,7 @@ class Solution(object):
         :type head: ListNode
         :rtype: bool
         """
-        nodes=set()
+        nodes = set()
         cur = head
         while True:
             if not cur:
