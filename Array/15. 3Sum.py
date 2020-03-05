@@ -18,3 +18,4 @@ class Solution(object):
                 else:
                     res.add((v, -v - x, x))
         return map(list, res)
+skdfh
